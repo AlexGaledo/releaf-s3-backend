@@ -1,1 +1,1 @@
-Backend Python extension for ReLeaf
+Python server extension for ReLeaf
