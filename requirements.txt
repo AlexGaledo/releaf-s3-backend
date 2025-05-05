@@ -1,0 +1,4 @@
+gunicorn
+flask
+dotenv
+boto3

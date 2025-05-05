@@ -1,9 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from dotenv import load_dotenv
-import boto3
-import os
-import uuid
+import boto3,os
 
 # Load environment variables from .env file
 load_dotenv()
