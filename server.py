@@ -7,7 +7,12 @@ import boto3,os
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, origins=["https://releaf-react.vercel.app/"])
+CORS(app, origins=[
+    "http://localhost:5173",        # Vite default
+    "http://localhost:3000",        # Create React App default
+    "https://releaf-react.vercel.app"  # Production frontend
+])
+
 
 # Initialize S3 client
 s3 = boto3.client(
